@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 5.1.1"
+  s.add_dependency "rails", "~> 5.0"
   s.add_dependency "ckeditor"
   s.add_dependency "administrate"
   s.add_dependency "paperclip"
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
   s.add_dependency "paranoia", "~> 2.2"
   s.add_dependency "paper_trail"
   s.add_dependency "simple_form"
-  s.add_dependency "slim-rails"
+  s.add_dependency "slim"
   s.add_dependency "axlsx"
   s.add_dependency "awesome_nested_set"
   s.add_dependency "the_sortable_tree"
