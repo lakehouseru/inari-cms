@@ -1,5 +1,5 @@
 # Inari::Cms
-Yet another Rails CMS on tom of Administrate gem. Made to be simple and flixible
+Yet another Rails CMS on top of Administrate gem. Made to be simple and flixible
 
 ## Usage
 This is alpha release - use it on your own risk
