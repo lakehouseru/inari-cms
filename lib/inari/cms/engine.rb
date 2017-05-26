@@ -8,6 +8,7 @@ module Inari
           config.paths['db/migrate'].expanded.each do |expanded_path|
             app.config.paths['db/migrate'] << expanded_path
           end
+          
         end
       end
 
