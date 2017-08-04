@@ -1,6 +1,6 @@
 class MenuItem < ActiveRecord::Base
   acts_as_nested_set
-  include TheSortableTree::Scopes
+  include ::TheSortableTree::Scopes
   belongs_to :menu
   belongs_to :post
   validates :name,  presence: true

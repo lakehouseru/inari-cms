@@ -3,3 +3,5 @@
 #
 
 require 'jquery-rails'
+require 'awesome_nested_set'
+require 'administrate'

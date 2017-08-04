@@ -1,3 +1,4 @@
+require_relative 'dependencies'
 module Inari
   module Cms
     class Engine < ::Rails::Engine
