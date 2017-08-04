@@ -9,6 +9,13 @@ module Admin
     before_action :authenticate_user!
     before_action :authenticate_admin
 
+    before_action :set_locale
+ 
+    def set_locale
+      # Administrate sets own default locale, so we need thhis hack
+      I18n.locale = params[:locale] || :ru 
+    end
+
     def authenticate_admin
       current_user.admin?
     end
