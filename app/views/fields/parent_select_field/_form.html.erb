@@ -1,0 +1,15 @@
+<div class="field-unit__label">
+  <%= f.label field.attribute %>
+</div>
+<div class="field-unit__field">
+  
+
+  <%=f.select field.attribute, nested_options(
+        f.object.class.all, 
+        selected: f.object.parent), 
+      {include_blank: true},
+      {class: :nested_options, selected: "3"} 
+
+      
+       %>
+</div> 

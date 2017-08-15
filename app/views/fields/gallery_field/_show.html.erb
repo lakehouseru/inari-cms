@@ -1,0 +1,6 @@
+<% field.data.each do |att| %>
+  <%=link_to att.image.url, target: "_blank" do
+      image_tag  att.image.thumb.url 
+    end
+  %>
+<% end %>

@@ -13,6 +13,8 @@ module Inari
         end
       end
 
+      Administrate::Engine.add_stylesheet "administrate/admin-custom"
+
       config.generators do |g|
         g.stylesheets false
         g.helper false

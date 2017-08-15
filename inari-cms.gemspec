@@ -18,8 +18,8 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 5.0"
   s.add_dependency "ckeditor"
+  s.add_dependency "russian"
   s.add_dependency "administrate"
-  s.add_dependency "paperclip"
   s.add_dependency "devise"
   s.add_dependency "devise-i18n"
   s.add_dependency "devise-i18n-views"

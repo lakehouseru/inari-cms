@@ -1,0 +1,7 @@
+ru:
+  activerecord:
+    attributes:
+      post:
+        title: Заголовок
+        password: Пароль
+        remember_me: Запомнить меня

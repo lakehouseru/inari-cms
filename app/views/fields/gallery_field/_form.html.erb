@@ -1,0 +1,22 @@
+<div class="field-unit__label">
+ <%= f.label field.attribute %>
+</div>
+<div class="field-unit__field">
+  <%= f.file_field :image, multiple: true %>
+</div>
+
+<div class="row"> 
+<hr>
+<% field.data.each do |att| %>
+  <div class="gallery-item">
+    <%=link_to att.image.url, target: "_blank" do
+        image_tag  att.image.small.url 
+      end
+    %>
+    <%=link_to   admin_destroy_attachment_path(att), method: "delete", class: "destroy-link", data: {confirm: "Вы хотите удалить(восстановление не возможно!)?"} do %>
+      <i class="fa fa-trash" aria-hidden="true"></i>
+  <%end%>
+  </div>
+<% end %>
+</div>
+
