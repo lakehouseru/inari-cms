@@ -1,5 +1,10 @@
-<div class="col-md-6 col-sm-12">
-  <div class="fallback">
-
+<div class="field-unit field-unit--string">
+  <div class="field-unit__label">
+    <%= f.label :image %> 
+  </div>
+  <div class="field-unit__field">
+    <%= image_tag field.resource.image.small.url if field.resource.image? %>
+    <%= f.file_field :image, class: 'form-control' %>
+    <%= f.hidden_field :image_cache %>
   </div>
 </div>

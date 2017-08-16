@@ -31,16 +31,17 @@ class PostDashboard < Administrate::BaseDashboard
 
   FORM_ATTRIBUTES = [\
       :title,
+      :excerpt,
+      :image,
       :content,
       :post_category,
-      :post_template,      
+      :post_template,
+      :gallery,      
       :slug,
       :page_title,
       :keywords,
-      :description,
-      :gallery,
-      :excerpt,
-      :image
+      :description
+
   ]
 
   def display_resource(item)
