@@ -17,6 +17,8 @@
 #  page_title       :string
 
 class Post < ApplicationRecord
+  mount_uploader :image, ThumbnailUploader
+  
 	belongs_to :post_category
 	belongs_to :post_template
 	belongs_to :gallery 
