@@ -9,3 +9,15 @@ ru:
         email: Email
         password: Пароль
         remember_me: Запомнить меня
+        Encrypted password: Зашифрованный пароль
+        Reset password token: Сброс аппаратного ключа
+        Reset password sent at: Отправить новый ключ на
+        Remember created at: Дата создания
+        Sign in count: Количество входов в систему
+        Current sign in at: Время текущего входа в систему
+        Last sign in at: Время последнего входа в систему
+        Current sign in ip: Текущий ip-адрес
+        Last sign in ip: Прошлый ip-адрес
+        Fio: ФИО
+        Tel: Телефон
+        Role: Роль
