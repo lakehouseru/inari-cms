@@ -2,6 +2,7 @@
 //= require jquery_ujs
 //= require selectize
 //= require moment
+//= require moment/ru
 //= require datetime_picker
 //= require ckeditor/ckeditor
 //= require ckeditor/init
