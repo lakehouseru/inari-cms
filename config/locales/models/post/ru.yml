@@ -1,5 +1,9 @@
 ru:
   activerecord:
+    models:
+      posts:
+        one: Запись
+        other: Записи
     attributes:
       post:
         title: Заголовок
