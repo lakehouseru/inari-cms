@@ -22,6 +22,7 @@ class PostDashboard < Administrate::BaseDashboard
       :id,
       :title,
       :slug,
+      :image,
       :post_category,
       :published_at
 
