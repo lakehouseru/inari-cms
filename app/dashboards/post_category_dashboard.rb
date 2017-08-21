@@ -11,6 +11,7 @@ class PostCategoryDashboard < Administrate::BaseDashboard
     post: Field::HasMany,
     id: Field::Number,
     name: Field::String,
+    slug:  Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -24,6 +25,7 @@ class PostCategoryDashboard < Administrate::BaseDashboard
     :post,
     :id,
     :name,
+    :slug,
     :created_at,
   ].freeze
 
@@ -33,6 +35,7 @@ class PostCategoryDashboard < Administrate::BaseDashboard
     :post,
     :id,
     :name,
+    :slug,
     :created_at,
     :updated_at,
   ].freeze
@@ -41,8 +44,10 @@ class PostCategoryDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :post,
     :name,
+    :slug,
+    :post
+
   ].freeze
 
   # Overwrite this method to customize how post categories are displayed

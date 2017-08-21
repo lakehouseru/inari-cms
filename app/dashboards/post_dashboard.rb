@@ -5,6 +5,7 @@ class PostDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
       id: Field::Number,
       title: Field::String,
+      published_at: Field::DatePicker,
       content: WysiwygField,
       page_title: Field::String,
       excerpt: Field::String,
@@ -21,8 +22,10 @@ class PostDashboard < Administrate::BaseDashboard
       :id,
       :title,
       :slug,
+      :image,
       :post_category,
-      :excerpt
+      :published_at
+
   ]
 
   # SHOW_PAGE_ATTRIBUTES
@@ -34,6 +37,7 @@ class PostDashboard < Administrate::BaseDashboard
       :excerpt,
       :image,
       :content,
+      :published_at,
       :post_category,
       :post_template,
       :gallery,      

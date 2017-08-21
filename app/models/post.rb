@@ -24,5 +24,12 @@ class Post < ApplicationRecord
 	belongs_to :gallery 
 
 	validates :slug, :title,  presence: true
-  	validates :slug, uniqueness: true
+  validates :slug, uniqueness: true
+  validates_format_of :slug, with: /\A[a-z0-9\-_]+\z/i
+
+  scope :published, -> {where("published_at <= ?", Date.today)}
+
+  def human_published_at 
+    "#{l published_at}"
+  end
 end
