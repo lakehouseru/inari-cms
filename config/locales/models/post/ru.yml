@@ -1,21 +1,23 @@
 ru:
   activerecord:
     models:
-      posts:
+      post:
         one: Запись
         other: Записи
     attributes:
       post:
+        id: №
         title: Заголовок
         password: Пароль
         remember_me: Запомнить меня
-        Excerpt: Краткое содержание
-        Image: Изображение
-        Content: Содержание
-        Post category: Категория
-        Post template: Шаблон
-        Gallery: Гелерея
-        Slug: Ссылка
-        Page title: Заголовок страницы
-        Keywords: Ключевые слова
-        Description: Описание
+        excerpt: Краткое содержание
+        image: Ключевое изображение
+        content: Содержание
+        published_at: Опубликовано
+        post_category_id: Категория
+        post_template_id: Шаблон страницы
+        gallery_id: Галерея
+        slug: Ссылка
+        page_title: Заголовок страницы (SEO)
+        keywords: Ключевые слова (SEO)
+        description: Описание (SEO)
