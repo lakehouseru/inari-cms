@@ -14,11 +14,13 @@ class DashboardManifest
      :articles,
      :posts,
      :galleries,
-     :users,
+     :blocks,
      :post_categories,
      :post_templates,
      :menus,
      :menu_items,
+     :users
+
      
 
   ]

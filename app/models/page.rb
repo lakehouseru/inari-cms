@@ -16,22 +16,8 @@
 #  slug             :string
 #  page_title       :string
 
-class Post < ApplicationRecord
-  mount_uploader :image, ThumbnailUploader
-  
-	belongs_to :post_category
-	belongs_to :post_template
-	belongs_to :gallery 
+class Page < Post
 
-	validates :slug, :title,  presence: true
-  validates :slug, uniqueness: true
-  validates_format_of :slug, with: /\A[a-z0-9\-_]+\z/i
+default_scope { where(type: "Page") }
 
-  default_scope { where(type: nil) }
-
-  scope :published, -> {where("published_at <= ?", Date.today)}
-
-  def human_published_at 
-    "#{l published_at}"
-  end
 end
