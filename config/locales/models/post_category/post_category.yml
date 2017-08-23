@@ -1,0 +1,11 @@
+ru:
+  activerecord:
+    models:
+      post_category:
+        one: Категория
+        other: Категории
+    attributes:
+      post_category:
+        Name: Название
+        slug: Ссылка
+        post: Запись

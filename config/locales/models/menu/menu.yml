@@ -1,0 +1,10 @@
+ru:
+  activerecord:
+    models:
+      menu:
+        one: Меню
+        other: Меню
+    attributes:
+      menu:
+        name: Название
+        slug: Ссылка

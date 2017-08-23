@@ -1,0 +1,12 @@
+ru:
+  activerecord:
+    models:
+      block:
+        one: Блок
+        other: Блоки
+    attributes:
+      block:
+        title: Заголовок
+        slug: Ссылка
+        content: Содержание
+        description: Описание
