@@ -21,3 +21,4 @@ ru:
         page_title: Заголовок страницы (SEO)
         keywords: Ключевые слова (SEO)
         description: Описание (SEO)
+        order: Порядковый номер

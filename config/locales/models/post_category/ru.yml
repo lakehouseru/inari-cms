@@ -6,6 +6,6 @@ ru:
         other: Категории
     attributes:
       post_category:
-        Name: Название
+        name: Название
         slug: Ссылка
         post: Запись
