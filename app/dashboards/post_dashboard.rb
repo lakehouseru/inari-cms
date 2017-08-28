@@ -5,6 +5,7 @@ class PostDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
       id: Field::Number,
       title: Field::String,
+      order: Field::Number,
       published_at: Field::DatePicker,
       content: WysiwygField,
       page_title: Field::String,
@@ -34,6 +35,7 @@ class PostDashboard < Administrate::BaseDashboard
 
   FORM_ATTRIBUTES = [\
       :title,
+      :order,
       :excerpt,
       :image,
       :content,
