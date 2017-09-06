@@ -30,6 +30,7 @@ class Post < ApplicationRecord
   default_scope { where(type: nil) }
 
   scope :published, -> {where("published_at <= ?", Date.today)}
+  scope :by_category_slug,  -> (category_slug) { where(post_category_id: PostCategory.find_by(slug: category_slug).id) }
 
   def human_published_at 
     "#{l published_at}"

@@ -21,3 +21,9 @@ ru:
         fio: ФИО
         tel: Телефон
         role: Роль
+        password_confirmation: Подтверждение пароля
+  admin: Администратор
+  user: Пользователь
+  manager:  Мэнеджер
+  partner: Партнер
+        

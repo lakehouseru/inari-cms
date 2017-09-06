@@ -6,6 +6,7 @@
 # you're free to overwrite the RESTful controller actions.
 module Admin
   class ApplicationController < Administrate::ApplicationController
+    include Pundit
     before_action :authenticate_user!
     before_action :authenticate_admin
 
@@ -17,7 +18,9 @@ module Admin
     end
 
     def authenticate_admin
-      current_user.admin?
+      unless current_user.admin?
+        redirect_to partner_news_index_url
+      end 
     end
 
     # Override this value to specify the number of elements to display at a time

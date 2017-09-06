@@ -23,7 +23,7 @@ class UserDashboard < Administrate::BaseDashboard
     updated_at: Field::DateTime,
     fio: Field::String,
     tel: Field::String,
-    role: Field::String.with_options(searchable: false),
+    role: SelectField,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -34,8 +34,10 @@ class UserDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :email,
-    :encrypted_password,
-    :reset_password_token,
+    :fio,
+    :tel,
+    :role,
+    :updated_at
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -64,15 +66,6 @@ class UserDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :email,
-    :encrypted_password,
-    :reset_password_token,
-    :reset_password_sent_at,
-    :remember_created_at,
-    :sign_in_count,
-    :current_sign_in_at,
-    :last_sign_in_at,
-    :current_sign_in_ip,
-    :last_sign_in_ip,
     :fio,
     :tel,
     :role,
