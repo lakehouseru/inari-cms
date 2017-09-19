@@ -15,7 +15,6 @@ class BlockDashboard < Administrate::BaseDashboard
       :id,
       :title,
       :slug,
-      :content,
       :description
 
   ]
