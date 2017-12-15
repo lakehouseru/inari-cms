@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :menus
     resources :menu_items
     resources :users
+    resources :sliders
 
     root to: "posts#index"
   end

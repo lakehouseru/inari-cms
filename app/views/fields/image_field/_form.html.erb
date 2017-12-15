@@ -1,10 +1,10 @@
 <div class="field-unit field-unit--string">
   <div class="field-unit__label">
-    <%= f.label :image %> 
+    <%= f.label field.attribute %>
   </div>
   <div class="field-unit__field">
-    <%= image_tag field.resource.image.small.url if field.resource.image? %>
-    <%= f.file_field :image, class: 'form-control' %>
-    <%= f.hidden_field :image_cache %>
+    <%= image_tag field.resource.send(field.attribute).small.url if field.resource.send("#{field.attribute}?") %>
+    <%= f.file_field field.attribute, class: 'form-control' %>
+    <%= f.hidden_field "#{field.attribute}_cache".to_sym %>
   </div>
 </div>
