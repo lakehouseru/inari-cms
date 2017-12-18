@@ -1,0 +1,15 @@
+ru:
+  activerecord:
+    models:
+      slider:
+        one: Слайдер
+        other: Слайдеры
+    attributes:
+      slider:
+        header: Заголовок
+        link: Ссылка
+        main_text: Главный текст
+        additional_text: Дополнительный текст
+        action_text: Текст действия
+        key_image: Ключевое изображение
+        icon: иконка
