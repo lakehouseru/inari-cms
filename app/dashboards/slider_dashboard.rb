@@ -9,7 +9,8 @@ class SliderDashboard < Administrate::BaseDashboard
       key_image: ImageField,
       main_text: Field::String,
       additional_text: Field::String,
-      action_text: Field::String
+      action_text: Field::String,
+      icon: Field::IconField
   }
 
   COLLECTION_ATTRIBUTES = [
@@ -19,7 +20,7 @@ class SliderDashboard < Administrate::BaseDashboard
       :key_image,
       :main_text,
       :additional_text,
-      :action_text
+      :icon
   ]
 
   # SHOW_PAGE_ATTRIBUTES
@@ -33,7 +34,7 @@ class SliderDashboard < Administrate::BaseDashboard
       :key_image,
       :main_text,
       :additional_text,
-      :action_text
+      :icon
 
   ]
 
