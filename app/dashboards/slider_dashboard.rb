@@ -20,6 +20,7 @@ class SliderDashboard < Administrate::BaseDashboard
       :key_image,
       :main_text,
       :additional_text,
+      :action_text,
       :icon
   ]
 
@@ -34,6 +35,7 @@ class SliderDashboard < Administrate::BaseDashboard
       :key_image,
       :main_text,
       :additional_text,
+      :action_text,
       :icon
 
   ]
