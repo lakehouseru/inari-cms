@@ -3,3 +3,35 @@
   width: 95% !important;
 }
 
+.field-unit--gallery-field{
+  display: block;
+  .row {
+    clear: both;
+    padding: 20px;
+    td img {
+      max-height: 100%;
+    }
+    td:last-child, th:last-child {
+      padding: 0;
+    }
+    tr {
+      text-align: center;
+    }
+    .gallery-item  {
+      position: relative;
+      display: inline-block;
+      margin: 12px;
+      .destroy-link{
+        background-color: red;
+        display: block;
+        position: absolute;
+        padding: 4px;
+        border-radius: 15px;
+        color: white;
+        top: -4px;
+        right: -6px;
+        
+      }
+    }
+  }
+}

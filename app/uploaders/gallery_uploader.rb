@@ -36,7 +36,7 @@
 
     def watermark
       manipulate! do |img|
-        logo = MiniMagick::Image.open("#{Rails.root}/app/assets/images/logo_smaller.png")
+        logo = MiniMagick::Image.open("#{Rails.root}/app/assets/images/logo.svg")
         img = img.composite(logo) do |image|
             image.gravity "SouthEast" # copy second_image onto first_image from (20, 20)
             image.alpha "Set"
