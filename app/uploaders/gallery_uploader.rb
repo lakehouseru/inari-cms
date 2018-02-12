@@ -14,12 +14,10 @@
       
       process resize_to_fit: [960, 960]
 
-      process :watermark
     end
 
     version :medium do
       process resize_to_fit: [600, 600]
-      process :watermark
     end
 
     version :small do
@@ -34,15 +32,5 @@
       %w(jpg jpeg gif png)
     end
 
-    def watermark
-      manipulate! do |img|
-        logo = MiniMagick::Image.open("#{Rails.root}/app/assets/images/logo.svg")
-        img = img.composite(logo) do |image|
-            image.gravity "SouthEast" # copy second_image onto first_image from (20, 20)
-            image.alpha "Set"
-            image.blend  "50"
-
-        end
-      end
-    end
+    
   end
