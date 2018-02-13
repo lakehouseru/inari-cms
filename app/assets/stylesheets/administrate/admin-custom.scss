@@ -1,4 +1,13 @@
+@import "font-awesome";
 @import "flatpickr.material_red";
+
+#error_explanation{
+  h2{
+
+    padding: 20px;
+    text-align: center;
+  }
+}
 .field-wide {
   width: 95% !important;
 }

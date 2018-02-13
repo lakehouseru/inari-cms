@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
   s.add_dependency "carrierwave"
   s.add_dependency "mini_magick"
   s.add_dependency "administrate-field-date_picker"
+  s.add_dependency "pg_search"
 
 
   s.add_development_dependency "pg"

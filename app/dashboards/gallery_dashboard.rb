@@ -12,9 +12,7 @@ class GalleryDashboard < Administrate::BaseDashboard
     gallery_attachments: GalleryField,
     id: Field::Number,
     name: Field::String,
-    thumbnail: Field::String,
     slug: Field::String,
-    image: ImageField,
     content: WysiwygField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
@@ -28,6 +26,7 @@ class GalleryDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :name,
+    :slug,
     :created_at
   ]
 
@@ -48,7 +47,7 @@ class GalleryDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :name,
     :gallery_attachments,
-    :image,
+    :content,
     :slug,
     :posts
   ]

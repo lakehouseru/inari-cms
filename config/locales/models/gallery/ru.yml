@@ -1,0 +1,15 @@
+ru:
+  activerecord:
+    models:
+      gallery: 
+        one: Фотогалерея
+        other: Фотогалереи
+    attributes:
+      gallery:
+        name: Название
+        gallery_attachments: Изображения
+        image: Ключевое изображение
+        slug: Ссылка
+        posts: Записи
+        post_id: Записи
+        content: Дополнительная информация  
