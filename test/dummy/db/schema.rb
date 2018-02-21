@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170828100004) do
+ActiveRecord::Schema.define(version: 20180221103921) do
 
   create_table "blocks", force: :cascade do |t|
     t.string "title"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20170828100004) do
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "sort"
   end
 
   create_table "gallery_attachments", force: :cascade do |t|
@@ -46,6 +47,7 @@ ActiveRecord::Schema.define(version: 20170828100004) do
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "sort"
   end
 
   create_table "menu_items", force: :cascade do |t|
@@ -97,6 +99,18 @@ ActiveRecord::Schema.define(version: 20170828100004) do
     t.datetime "published_at"
     t.string "type"
     t.integer "order"
+  end
+
+  create_table "sliders", force: :cascade do |t|
+    t.string "header"
+    t.string "link"
+    t.text "main_text"
+    t.text "additional_text"
+    t.string "action_text"
+    t.string "key_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "icon"
   end
 
   create_table "users", force: :cascade do |t|

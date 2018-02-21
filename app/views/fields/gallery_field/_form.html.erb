@@ -7,16 +7,17 @@
 
 <div class="row"> 
 <hr>
-<% field.data.each do |att| %>
-  <div class="gallery-item">
-    <%=link_to att.image.url, target: "_blank" do
-        image_tag  att.image.small.url 
-      end
-    %>
-    <%=link_to   admin_destroy_attachment_path(att), method: "delete", class: "destroy-link", data: {confirm: "Вы хотите удалить(восстановление не возможно!)?"} do %>
-      <i class="fa fa-trash" aria-hidden="true"></i>
-  <%end%>
-  </div>
-<% end %>
+  <table>
+    <tbody id="sortable">
+      <% field.data.each_with_sortable_id do |att, sortable_id| %>
+          <tr id="<%= sortable_id %>">  <!-- Needs id tag on sorting elements -->
+            <td class="gallery-item"><%=link_to att.image.url, target: "_blank" do image_tag  att.image.small.url end%><%=link_to   admin_destroy_attachment_path(att), method: "delete", class: "destroy-link", data: {confirm: "Вы хотите удалить(восстановление не возможно!)?"} do %>
+              <i class="fa fa-trash" aria-hidden="true"></i>
+            <%end%></td>
+          </tr>
+      <% end %>
+    </tbody>
+  </table>
 </div>
 
+<script>$(function() {$('#sortable').railsSortable();});</script>
