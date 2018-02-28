@@ -28,6 +28,10 @@
       process resize_to_fill: [107, 71]
     end
 
+    version :card do
+      process resize_to_fill: [550, 250]
+    end
+
     def extension_white_list
       %w(jpg jpeg gif png)
     end
