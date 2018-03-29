@@ -18,6 +18,7 @@ class Gallery < ApplicationRecord
   has_many :posts
   has_many :items
   has_many :gallery_attachments
+  has_many :facility
   validates_presence_of :gallery_attachments, :on => [:update ]
   validates_presence_of :content, :on => [:update ]
   validates_presence_of :name , :slug
