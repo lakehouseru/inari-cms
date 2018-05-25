@@ -7,8 +7,8 @@ class SliderDashboard < Administrate::BaseDashboard
       header: Field::String,
       link: Field::String,
       key_image: ImageField,
-      main_text: Field::String,
-      additional_text: Field::String,
+      main_text: Field::Text,
+      additional_text: Field::Text,
       action_text: Field::String,
       icon: Field::IconField
   }
@@ -29,7 +29,6 @@ class SliderDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = ATTRIBUTE_TYPES.keys
 
   FORM_ATTRIBUTES = [\
-      :id,
       :header,
       :link,
       :key_image,

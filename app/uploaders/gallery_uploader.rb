@@ -8,8 +8,8 @@
        "uploads/galleries/#{model.id}"
     end
 
-    process resize_to_limit: [1160, 2000]
-
+    process resize_to_limit: [2000, 2000]
+    
     version :large do
       
       process resize_to_fit: [960, 960]
