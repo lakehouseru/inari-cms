@@ -11,10 +11,10 @@ class PageDashboard < Administrate::BaseDashboard
       excerpt: Field::String,
       keywords: Field::String,
       description:  Field::String,
-      post_template: Select2Field,
       slug: Field::String,
       gallery:  Select2Field, 
-      image: ImageField
+      image: ImageField,
+      page_template: Field::BelongsTo
   }
 
   COLLECTION_ATTRIBUTES = [
@@ -36,7 +36,7 @@ class PageDashboard < Administrate::BaseDashboard
       :image,
       :content,
       :published_at,
-      :post_template,
+      :page_template,
       :gallery,      
       :slug,
       :page_title,

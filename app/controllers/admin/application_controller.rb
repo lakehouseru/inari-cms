@@ -19,7 +19,7 @@ module Admin
 
     def authenticate_admin
       unless current_user.admin?
-        redirect_to partner_news_index_url
+        redirect_to root_url
       end 
     end
 

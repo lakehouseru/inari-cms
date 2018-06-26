@@ -20,14 +20,14 @@ class Post < ApplicationRecord
   mount_uploader :image, ThumbnailUploader
   
 	belongs_to :post_category
-	belongs_to :post_template
+	belongs_to :page_template
 	belongs_to :gallery 
 
 	validates :slug, :title,  presence: true
   validates :slug, uniqueness: true
   validates_format_of :slug, with: /\A[a-z0-9\-_]+\z/i
 
-  default_scope { where(type: nil) }
+  #default_scope { where(type: nil) }
 
   scope :published, -> {where("published_at <= ?", Date.today)}
   scope :by_category_slug,  -> (category_slug) { where(post_category_id: PostCategory.find_by(slug: category_slug).id) }

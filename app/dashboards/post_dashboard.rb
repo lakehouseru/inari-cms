@@ -13,7 +13,7 @@ class PostDashboard < Administrate::BaseDashboard
       keywords: Field::String,
       description:  Field::String,
       post_category: Select2Field,
-      post_template: Select2Field,
+      page_template: Field::BelongsTo,
       slug: Field::String,
       gallery:  Select2Field, 
       image: ImageField
@@ -41,7 +41,7 @@ class PostDashboard < Administrate::BaseDashboard
       :content,
       :published_at,
       :post_category,
-      :post_template,
+      :page_template,
       :gallery,      
       :slug,
       :page_title,

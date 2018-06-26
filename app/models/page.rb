@@ -18,6 +18,13 @@
 
 class Page < Post
 
-default_scope { where(type: "Page") }
+before_save :set_type
+#default_scope {where(type: "Page") }
+
+
+
+def set_type
+  self.type = 'Page'
+end
 
 end

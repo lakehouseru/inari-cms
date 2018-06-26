@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :blocks
     resources :menus
     resources :menu_items
+    resources :page_templates
     resources :users
     resources :sliders
     delete 'gallery_attachment/:id', to: 'galleries#destroy_attachment', as: :destroy_attachment

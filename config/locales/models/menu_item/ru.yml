@@ -1,0 +1,13 @@
+ru:
+  activerecord:
+    models:
+      menu_item:
+        one: Пункт меню
+        other: Пункты меню
+    attributes:
+      menu_item:
+        name: Название
+        url: Ссылка
+        post: Связанный пост
+        menu: Блок меню
+        parent_id: Родительский элемент

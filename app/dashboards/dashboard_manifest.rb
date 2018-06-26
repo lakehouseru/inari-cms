@@ -10,13 +10,13 @@ class DashboardManifest
   # Dashboards returned from this method must be Rails models for Administrate
   # to work correctly.
   DASHBOARDS = [
-     
-     :articles,
+
      :posts,
+     :post_categories,
+     :page_templates,
+     :pages,
      :galleries,
      :blocks,
-     :post_categories,
-     :post_templates,
      :menus,
      :menu_items,
      :users
@@ -26,11 +26,10 @@ class DashboardManifest
   ]
 
   MANAGER_DASHBOARDS = [
-     :articles,
      :posts,
      :galleries,
      :post_categories,
-     :post_templates,
+     :page_templates,
      :menus,
      :menu_items,
 

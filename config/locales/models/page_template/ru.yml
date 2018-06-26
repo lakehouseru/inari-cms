@@ -1,0 +1,12 @@
+ru:
+  activerecord:
+    models:
+      page_template:
+        one: Шаблон страницы
+        other: Шаблоны страниц
+    attributes:
+      page_template:
+        title: Название
+        slug: Идентификатор
+        pages: Страницы
+        description: Описание
