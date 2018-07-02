@@ -27,7 +27,8 @@ class MenuItemDashboard < Administrate::BaseDashboard
     :post,
     :name,
     :url,
-    :parent_id
+    :parent_id,
+    :order
   ]
 
   def display_resource(item)
