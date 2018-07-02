@@ -4,6 +4,7 @@
 require 'russian'
 require 'jquery-rails'
 require 'awesome_nested_set'
+require 'the_sortable_tree'
 require 'administrate'
 require 'administrate/field/date_picker'
 require 'administrate/field/password'

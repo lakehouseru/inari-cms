@@ -4,9 +4,11 @@
 <div class="field-unit__field">
   
 
-  <%=f.select field.attribute, nested_options(
-        f.object.class.all, 
-        selected: f.object.parent), 
+  <%=
+  
+  f.select field.attribute, 
+      options_for_select(nested_set_options(f.object.class) {|i| "#{'-' * i.level} #{i.name}" } ) ,
+      #grouped_options_for_select(f.object.class.all), 
       {include_blank: true},
       {class: :nested_options, selected: "3"} 
 
