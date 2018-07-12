@@ -10,6 +10,9 @@ class User < ApplicationRecord
 
   validates :fio, :email, :role, presence: true
 
+  validates_format_of :tel,
+                      :with => /\A\+[0-9]{1}\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}\z/,
+                      :message => "должен соответствовать формату +х(ххх)xxx-xx-xx"
   def set_default_role
     self.role ||= :user
   end
