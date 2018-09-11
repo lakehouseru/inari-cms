@@ -43,7 +43,7 @@ class PostDashboard < Administrate::BaseDashboard
       :post_category,
       :page_template,
       :gallery,      
-      :slug,
+      # :slug,
       :page_title,
       :keywords,
       :description

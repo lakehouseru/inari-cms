@@ -38,7 +38,7 @@ class PageDashboard < Administrate::BaseDashboard
       :published_at,
       :page_template,
       :gallery,      
-      :slug,
+      # :slug, #removed in order for Friendly ID to work
       :page_title,
       :keywords,
       :description

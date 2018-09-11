@@ -18,14 +18,14 @@
 
 class Post < ApplicationRecord
   mount_uploader :image, ThumbnailUploader
+  extend FriendlyId
+  friendly_id :title, use: [:slugged, :finders]
   
 	belongs_to :post_category
 	belongs_to :page_template
 	belongs_to :gallery 
 
-	validates :slug, :title,  presence: true
-  validates :slug, uniqueness: true
-  validates_format_of :slug, with: /\A[a-z0-9\-_]+\z/i
+
 
   #default_scope { where(type: nil) }
 
