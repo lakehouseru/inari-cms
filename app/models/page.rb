@@ -20,6 +20,9 @@ class Page < Post
 
 before_save :set_type
 #default_scope {where(type: "Page") }
+  
+extend FriendlyId
+friendly_id :title, use: [:slugged, :finders]
 
 
 
