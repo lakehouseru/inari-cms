@@ -33,6 +33,8 @@ Gem::Specification.new do |s|
   s.add_dependency "the_sortable_tree"
   s.add_dependency "font-awesome-rails"
   s.add_dependency "jquery-rails"
+  s.add_dependency "jquery-ui-rails"
+  s.add_dependency "rails_sortable"
   s.add_dependency "kaminari"
   s.add_dependency "meta-tags"
   s.add_dependency "carrierwave"

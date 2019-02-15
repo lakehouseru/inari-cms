@@ -3,6 +3,8 @@
 #
 require 'russian'
 require 'jquery-rails'
+require 'jquery-ui-rails'
+require 'rails_sortable'
 require 'awesome_nested_set'
 require 'the_sortable_tree'
 require 'administrate'
